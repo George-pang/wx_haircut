@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no,viewport-fit=cover">
+		<title>订单-待消费</title>
+		<link rel="stylesheet" type="text/css" href="css/base.css"/>
+		<link rel="stylesheet" type="text/css" href="css/my.css"/>
+	</head>
+	<body>
+		<div class="page-hd">
+			我的订单
+			<div class="back">
+				<a href="my.html">
+					<img src="img/back.png"/>
+				</a>
+			</div>
+		</div>
+		<div class="nav-tabs">
+			<div class="nav-tab current-tab">
+				<a href="my_order_dxf.html">
+					待消费
+				</a>
+			</div>
+			<div class="nav-tab">
+				<a href="my_order_inservice.html">
+					服务中
+				</a>
+			</div>
+			<div class="nav-tab">
+				<a href="my_order_ywc.html">
+					已完成
+				</a>
+			</div>
+			<div class="nav-tab">
+				<a href="my_order_yqx.html">
+					已取消/过号
+				</a>
+			</div>
+		</div>
+		<div class="order-panel">
+			<div class="order-state">
+				叫号中
+			</div>
+			<div class="order-details">
+				<div class="waiting-time">
+					<div class="waiting-item">
+						<div class="number">
+							D002
+						</div>
+						<div class="title">
+							排队号码
+						</div>					
+					</div>
+					<div class="waiting-item">
+						<div class="number">
+							0
+						</div>
+						<div class="title">
+							等待人数/人
+						</div>		
+					</div>
+					<div class="waiting-item">
+						<div class="number">
+							0
+						</div>
+						<div class="title">
+							预计等待/分钟
+						</div>		
+					</div>
+				</div>
+				<div class="barber-shop">
+					<a href="">
+						<div class="shop-info">
+							<div class="shop-name">
+								黑色空间工作室
+							</div>
+							<div class="icon-more">
+								<img src="img/more1.png"/>
+							</div>
+						</div>
+					</a>
+					<div class="location">
+						<div class="icon-dingwei1">
+							<img src="img/dingwei1.png"/>
+						</div>
+						<div class="juli">
+							500m
+						</div>
+					</div>
+				</div>
+				<div class="barber-meal">
+					<div class="meal-item">
+						<div class="item-name">
+							发型师
+						</div>
+						<div class="item-content people-name">
+							Winner
+						</div>
+					</div>
+					<div class="meal-item meal-item-02">
+						<div class="item-name">
+							服务项目
+						</div>
+						<div class="item-content">
+							洗剪吹
+						</div>
+					</div>
+					<div class="meal-item meal-item-02">
+						<div class="item-name">
+							服务价格
+						</div>
+						<div class="item-content">
+							￥38
+						</div>
+					</div>
+					<div class="meal-item meal-item-02">
+						<div class="item-name">
+							取号时间
+						</div>
+						<div class="item-content">
+							2018-07-27 14:20
+						</div>
+					</div>
+				</div>
+				<div class="cancel-number">
+					<a href="javascript:;">
+						<button>取消排号</button>
+					</a>
+				</div>
+			</div>
+		</div>
+		<!--取消排号弹窗-->
+		<div class="qx-popup-wrap">
+			<div class="qx-popup">
+				<div class="popup-title">
+					温馨提示
+				</div>
+				<div class="popup-content">
+					<div class="row1">快到您了哦</div>
+					<div class="row1 row2">真的确认取消订单吗？</div>
+				</div>
+				<div class="confirm-02">
+					<a href="javascript:;">
+						<button class="no">
+							取消
+						</button>
+					</a>
+					<a href="index_qx_paihao.html">
+						<button class="yes">
+							确认
+						</button>
+					</a>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

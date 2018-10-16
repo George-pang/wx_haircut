@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no,viewport-fit=cover">
+		<title>个人中心</title>
+		<link rel="stylesheet" type="text/css" href="css/base.css"/>
+		<link rel="stylesheet" type="text/css" href="css/my.css"/>
+	</head>
+	<body>
+		<div class="page-hd">
+			个人中心
+		</div>
+		<div class="my-profile">
+			<div class="my-avatar">
+				<img src="img/avatar.jpg"/>
+			</div>
+			<div class="my-ID">
+				爱吃哒玉
+			</div>
+			<div class="my-phone">
+				<span>18755105171</span>
+				<a href="javscript：;" class="cg-phone">更换</a>
+			</div>
+		</div>
+		<div class="my-service">
+				<a href="my_chongzhi.html">
+					<div class="service-item border-bottom border-right">
+						<div class="item-icon">
+							<img src="img/chongzhi.png"/>
+						</div>
+						<div class="item-title">
+							充值
+						</div>
+					</div>
+				</a>
+				<a href="my_yue.html">
+					<div class="service-item border-bottom border-right">
+						<div class="item-icon">
+							<img src="img/zhanghuyue.png"/>
+						</div>
+						<div class="item-title">
+							余额
+						</div>
+					</div>
+				</a>
+				<a href="my_order_dxf.html">
+					<div class="service-item border-bottom">
+						<div class="item-icon">
+							<img src="img/dingdan.png"/>
+						</div>
+						<div class="item-title">
+							我的订单
+						</div>
+					</div>
+				</a>
+				<a href="my_shoucang.html">
+					<div class="service-item border-right">
+						<div class="item-icon">
+							<img src="img/dianpu.png"/>
+						</div>
+						<div class="item-title">
+							店铺收藏
+						</div>
+					</div>
+				</a>
+				<a href="my_pingfen.html">
+					<div class="service-item border-right">
+						<div class="item-icon">
+							<img src="img/pingfen.png"/>
+						</div>
+						<div class="item-title">
+							历史评分
+						</div>
+					</div>
+				</a>
+		</div>
+		<div class="footer-tab">
+			<div class="tab-index">
+				<a href="index.html">
+					<div class="tab-content">
+						<div class="tab-icon">
+							<img src="img/home2.png"/>
+						</div>
+						<div class="tab-text">首页</div>
+					</div>
+				</a>
+			</div>
+			<div class="tab-my">
+				<div class="tab-icon">
+					<img src="img/my1.png"/>
+				</div>
+				<div class="tab-text">个人中心</div>
+			</div>
+		</div>
+		<!--更换手机弹窗-->
+		<div class="popup-wrap">
+			<div class="cg-phone-popup">
+				<div class="popup-title">
+					更换手机号
+				</div>
+				<form action="" method="post">
+					<div class="input-wrap">
+						<input type="tel"  id="tel" placeholder="输入手机号" style="font-size:14px;color: #999999;"/>
+						<div class="get-yzm">
+							<div class="text-box">
+								<!--input标签有默认长度，直接对其应用flex不能自适应，需要在外层套个div-->
+								<input type="text" id="yzm" placeholder="输入验证码"style="font-size:14px;color: #999999;" />
+							</div>
+							<button>获取验证码</button>
+						</div>	
+					</div>
+					<div class="confirm">
+						<button class="no">
+							取消
+						</button>
+						<button class="yes">
+							确认
+						</button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</body>
+</html>

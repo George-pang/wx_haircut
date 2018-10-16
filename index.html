@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no,viewport-fit=cover">
+		<title>首页</title>
+		<link rel="stylesheet" type="text/css" href="css/base.css"/>
+		<link rel="stylesheet" type="text/css" href="css/index.css"/>
+		<link rel="stylesheet" type="text/css" href="css/swiper.css">
+	</head>
+	<body>
+		<div class="page-hd">
+			首页
+		</div>
+		<div class="my-position">
+			<div class="my-location">
+				<img src="img/my-location.jpg"/>
+			</div>
+			<div class="nearby-shop">
+				<div class="shop-name">
+					<div id="name">火萤工作室</div>
+					<div id="open-soon">即将开业</div>
+				</div>
+				<div class="juli">
+					100km
+				</div>
+				<div class="cut-peope">
+					1人正在剪发
+				</div>
+				<div class="place">
+					<div class="icon-location">
+						<img src="img/dingwei3.png"/>
+					</div>
+					<div class="desc">
+						合肥市蜀山区锦绣大道99号
+					</div>
+				</div>
+				<div class="to-haircut">
+					<a href="index_details.html">
+						<button>
+							去剪发
+						</button>
+					</a>
+				</div>
+				<div id="del">
+					<img src="img/del2.png" alt="">
+				</div>
+			</div>
+		</div>
+		<!--<div class="banner-box">-->
+			<!--<div class="banner">-->
+				<!--<img src="img/banner.png"/>			-->
+			<!--</div>-->
+		<!--</div>-->
+		<div class="swiper-container">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide" >
+					<img src="img/banner.png" alt="">
+				</div>
+				<div class="swiper-slide" >
+					<img src="img/banner.png" alt="">
+				</div>
+				<div class="swiper-slide" >
+					<img src="img/banner.png" alt="">
+				</div>
+			</div>
+			<!-- 如果需要分页器 -->
+			<div class="swiper-pagination"></div>
+		</div>
+		<div class="shop-list">
+			<div class="shop-item">
+				<div class="shop-name">
+					<div class="name">
+						火萤工作室
+					</div>
+					<div class="distance">
+						500m
+					</div>
+				</div>
+				<div class="charge-row">
+					<div class="charge">
+						洗剪吹¥38
+					</div>
+					<div class="tips">
+						离你最近
+					</div>
+				</div>
+				<div class="discount">
+					<div class="icon-manjian">
+						<img src="img/manjian.png"/>
+					</div>
+					<div class="title">
+						首单满30减3
+					</div>
+				</div>
+				<div class="shop-info-row">
+					<div class="shop-info">
+						<div class="people-number">
+							0人正在剪发
+						</div>
+						<div class="location">
+							<div class="icon-location">
+								<img src="img/dingwei1.png"/>
+							</div>
+							<div class="desc">
+								合肥市蜀山区锦绣大道99号
+							</div>
+						</div>
+					</div>
+					<div class="to-haircut">
+						<a href="index_details.html">
+							<button>
+								去剪发
+							</button>
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="shop-item not-open">
+				<div class="shop-name">
+					<div class="name">
+						<div class="dianming">
+							火萤工作室
+						</div>
+						<div class="state">
+							即将开业
+						</div>
+					</div>
+					<div class="distance">
+						500m
+					</div>
+				</div>
+				<div class="charge-row">
+					<div class="charge">
+						洗剪吹¥38
+					</div>
+					<div class="tips">
+						离你最近
+					</div>
+				</div>
+				<div class="discount">
+					<div class="icon-manjian">
+						<img src="img/manjian.png"/>
+					</div>
+					<div class="title">
+						首单满30减3
+					</div>
+				</div>
+				<div class="shop-info-row">
+					<div class="shop-info">
+						<div class="people-number">
+							0人正在剪发
+						</div>
+						<div class="location">
+							<div class="icon-location">
+								<img src="img/dingwei1.png"/>
+							</div>
+							<div class="desc">
+								合肥市蜀山区锦绣大道99号
+							</div>
+						</div>
+					</div>
+					<div class="to-haircut ">
+						去剪发
+					</div>
+				</div>
+			</div>
+			<div class="tips">未找到相关门店</div>
+		</div>
+		<div class="footer-tab">
+			<div class="tab-index">
+				<div class="tab-icon">
+					<img src="img/home1.png"/>
+				</div>
+				<div class="tab-text">首页</div>
+			</div>
+			<div class="tab-my">
+				<a href="my.html">
+					<div class="tab-content">
+						<div class="tab-icon">
+							<img src="img/my2.png"/>
+						</div>
+						<div class="tab-text">个人中心</div>
+					</div>
+				</a>
+			</div>
+		</div>
+		<!--注册账号弹窗-->
+		<div class="zc-popup-wrap">
+			<div class="zc-popup">
+				<div class="popup-title">
+					绑定手机号
+				</div>
+				<form action="" method="post">
+					<div class="input-wrap">
+						<input type="tel"  id="tel" placeholder="输入手机号" style="font-size:14px;color: #999999;"/>
+						<div class="get-yzm">
+							<div class="text-box">
+								<input type="text" id="yzm" placeholder="输入验证码"style="font-size:14px;color: #999999;" />  <!--input标签有默认长度，直接对其应用flex不能自适应，需要在外层套个div-->
+							</div>
+							<button>获取验证码</button>
+						</div>
+					</div>
+					<div class="confirm">
+						<button class="no">
+							取消
+						</button>
+						<button class="yes">
+							确认
+						</button>
+					</div>
+				</form>
+			</div>
+		</div>
+
+		<script src="js/swiper.js"></script>
+		<script>
+            var mySwiper = new Swiper ('.swiper-container', {
+                // direction: 'vertical',  //垂直方向轮播图
+                loop: true,
+                autoplay: {
+                    delay: 3000,//1秒切换一次
+                },
+
+                // 如果需要分页器
+                pagination: {
+                    el: '.swiper-pagination',
+                },
+
+            })
+		</script>
+	</body>
+</html>

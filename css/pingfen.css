@@ -1,0 +1,181 @@
+/*历史评分页及收藏店铺页 特殊 style*/
+
+/*历史评分页 特殊 style*/
+body{
+	background-color: #FFFFFF;
+}
+.pingfen-box{
+	margin-top:5px;
+	padding:0 16px;
+	/*background-color: pink;*/
+}
+.pingfen-box .pingfen{
+	display: flex;
+	padding: 25px 0;
+	position: relative;
+}
+.pingfen::after{
+	content: "";
+	position: absolute;
+	bottom: -1px;
+	left: 0;
+	width: 100%;
+	height: 1px;
+	background-color: #cccccc;
+}
+.pingfen-box .pingfen .user-avatar{
+	border-radius: 50%;
+	overflow: hidden;
+}
+.pingfen .user-avatar img{
+	width: 40px;
+	height: 40px;
+}
+.pingfen .pingfen-content{
+	margin-left: 10px;
+	flex: 1;
+	min-width: 0;
+}
+.pingfen-content .pingfen-zuanshi{
+	display: flex;
+}
+.pingfen-zuanshi .user-ID{
+	font-size: 16px;
+	letter-spacing: 0px;
+	color: #000000;
+	flex: 1;
+}
+.pingfen-zuanshi .user-ID i{
+	font-size: 16px;
+	font-weight: normal;
+	letter-spacing: 0px;
+	color: #999999;
+}
+.pingfen-content .pingfen-zuanshi .zuanshi{
+	display: flex;
+	align-items: center;
+}
+.pingfen-zuanshi .zuanshi img{
+	width: 10px;
+	height: 10px;
+	margin-left: 3px;
+}
+.pingfen-content .pingfen-title{
+	font-size: 16px;
+	line-height: 16px;
+	letter-spacing: 0px;
+	color: #666666;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+	margin-top: 10px;
+}
+.pingfen-content .pingfen-subtitle{
+	font-size: 12px;
+	line-height: 12px;
+	letter-spacing: 0px;
+	color: #999999;
+	display: flex;
+	margin-top: 10px;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+}
+.pingfen-subtitle .icon-biaoqian{
+	margin-right: 3px;
+}
+.pingfen-subtitle .icon-biaoqian img{
+	width: 12px;
+	height: 12px;
+	vertical-align: top;
+}
+.pj-picture {
+	margin-top: 15px;
+}
+.pj-picture img{
+	width: 70px;
+	height: 70px;
+	vertical-align: top;
+}
+.stylist-name{
+	display: flex;
+	justify-content: space-between;
+	margin-top: 10px;
+}
+.stylist-name .name{
+	font-size: 16px;
+	letter-spacing: 0px;
+	color: #666666;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+}
+.stylist-name .time{
+	font-family: HelveticaNeueDeskInterface-Regular;
+	font-size: 12px;
+	letter-spacing: 0px;
+	color: #999999;
+	padding:0 4px;
+}
+#shop-name{
+	display: block;
+}
+.shop-name {
+	display: flex;
+	margin-top: 10px;
+	align-items: center;
+}
+.shop-name .shop{
+	font-size: 16px;
+	line-height: 16px;
+	letter-spacing: 0px;
+	color: #000000;	
+}
+.shop-name .icon-more{
+	margin-left: 5px;
+}
+.shop-name .icon-more img{
+	width: 12.5px;
+	height: 12.5px;
+	/*vertical-align: top;*/
+}
+
+/*收藏店铺页 style*/
+.shop-list{
+
+}
+.shop-list .list-item{
+	padding: 0 16px;
+	font-family: HiraginoSansGB-W6;
+	font-size: 15px;
+	font-weight: normal;
+	font-stretch: normal;
+	height: 75px;
+	line-height: 75px;
+	letter-spacing: 0px;
+	color: #000000;
+	position: relative;
+	box-sizing: border-box;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.shop-list a{
+	display: block;
+}
+.shop-list .list-item img{
+	margin-left: 5px;
+	text-align: right;
+	width: 12.5px;
+	height: 12.5px;
+	vertical-align: baseline;
+}
+.list-item::after{
+	content: "";
+	position: absolute;
+	bottom: -1px;
+	left: 0;
+	width: 100%;
+	height: 1px;
+	background-color: #eeeeee;	
+}

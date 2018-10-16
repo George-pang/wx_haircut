@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no,viewport-fit=cover">
+    <title>工作经历</title>
+    <style type="text/css">
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        a{
+            text-decoration: none;
+        }
+        body{
+            padding: 40px 16px 0;
+            background-color: #f5f5f5;
+        }
+        .data-table{
+            margin-top: 30px;
+        }
+        table{
+            margin-top: 2px;
+            border-collapse: collapse;
+            width: 100%;
+            box-sizing: border-box;
+            table-layout: fixed;
+        }
+        tr {
+            border: 1px solid #000;
+        }
+        th,td{
+            padding: 3px;
+            text-align: center;
+            min-height: 30px;
+            box-sizing: border-box;
+            font-size: 12px!important;
+            color: #333;
+            border: none;
+            width: 14vw;
+        }
+        th {
+            overflow: hidden;
+            white-space: nowrap;
+        }
+        td a {
+            color: blue;
+            white-space: nowrap;
+        }
+        input{
+            outline: none;
+            border: 1px solid #cccccc;
+        }
+        .experience{
+            margin-top: 25px;
+        }
+        .form-item{
+            display: flex;
+            width: 100%;
+            margin-top: 15px;
+        }
+        .form-item .item-name{
+            width:25vw;
+            padding: 5px;
+            text-align: justify;
+            height: 24px;
+            line-height: 24px;
+        }
+        .item-name::after{
+            content: "";
+            display: inline-block;
+            width: 100%;
+        }
+        .form-item .item-content{
+            margin-left: 10px;
+            flex: 1;
+        }
+        .confirm-btn{
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+        }
+        .confirm-btn #btn{
+            width: 40vw;
+            padding: 5px;
+            font-size: 18px;
+            background-color: #DEC27C;
+            color: #FFFFFF;
+            border-radius: 5px;
+            border: none;
+        }
+        .page-hd{
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 44px;
+            line-height: 44px;
+            text-align: center;
+            background-color: #37363a;
+            font-size: 18px;
+            letter-spacing: 0px;
+            color: #ffffff;
+            z-index: 999;
+        }
+        .page-hd .back{
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translate(0,-50%);
+        }
+        .page-hd .back a{
+            display: block;
+            width: 44px;
+        }
+        .page-hd .back img{
+            width: 22px;
+            height: auto;
+            vertical-align: middle;
+        }
+
+        /*#add{*/
+        /*padding: 5px;*/
+        /*}*/
+    </style>
+</head>
+<body>
+    <div class="page-hd">
+        工作经历
+        <div class="back">
+            <a href="./index.php?i=2&c=entry&do=index&m=wxlm_appointment&log={php echo $_COOKIE['log']}&lat={php echo $_COOKIE['lat']}&op=main">
+                <img src="{RES}mobile/images/img/back.png"/>
+            </a>
+        </div>
+    </div>
+    <div class="page-title">
+        <h3>工作经历</h3>
+    </div>
+    <form action="" class="experience">
+        <div class="form-item">
+            <span class="item-name">商家</span>
+            <input type="text" class="item-content"/>
+        </div>
+        <div class="form-item">
+            <span class="item-name">职称</span>
+            <input type="text" class="item-content"/>
+        </div>
+        <div class="form-item">
+            <span class="item-name">开始时间</span>
+            <input type="date" class="item-content"/>
+        </div>
+        <div class="form-item">
+            <span class="item-name">结束时间</span>
+            <input type="date" class="item-content"/>
+        </div>
+        <div class="confirm-btn">
+            <input type="button" value="确定" id="btn" />
+        </div>
+    </form>
+
+    <div class="data-table">
+        <!--<input type="button" value="添加" id="add"/>-->
+        <table border="1">
+            <tbody id="tb">
+            <tr id="tb-hd">
+                <th>序号</th>
+                <th>商家</th>
+                <th>职称</th>
+                <th>开始时间</th>
+                <th>结束时间</th>
+                <th colspan="2">操作</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td><a href="javascrip:;">修改</a></td>
+                <td ><a href="javascrip:;" id="del">删除</a></td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td><a href="javascrip:;">修改</a></td>
+                <td ><a href="javascrip:;" id="del">删除</a></td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td><a href="javascrip:;">修改</a></td>
+                <td ><a href="javascrip:;" id="del">删除</a></td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <script>
+        $(function () {
+           $("#tb").on("click","#del",function () {
+               // this.parent().parent().remove();
+               $(this).parent().parent().remove();
+           });
+           // $("#add").on("click",function () {
+           //     var newtr="<tr><td></td><td></td><td></td><td></td><td></td><td><a href=\"javascrip:;\">修改</a></td>\n" + "<td ><a href=\"javascrip:;\" id=\"del\">删除</a></td></tr>>"
+           //    $(newtr).appendTo($("#tb"));
+           // });
+
+
+        });
+    </script>
+</body>
+</html>

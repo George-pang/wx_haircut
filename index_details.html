@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no,viewport-fit=cover">
+		<title>门店详情</title>
+		<link rel="stylesheet" type="text/css" href="css/base.css"/>
+		<link rel="stylesheet" type="text/css" href="css/index.css"/>
+		<link rel="stylesheet" type="text/css" href="css/nav.css">
+	</head>
+	<body class="md-details">
+		<div class="page-hd">
+			门店详情
+			<div class="back">
+				<a href="index.html">
+					<img src="img/back.png"/>
+				</a>
+			</div>
+		</div>
+		<div class="shop-photo">
+			<img src="img/bg-02.jpg"/>
+			<div class="shop-info">
+				<div class="shop-name">
+					火萤工作室
+				</div>
+				<div class="shop-location">
+					<div class="icon-dingwei">
+						<img src="img/dingwei2.png"/>
+					</div>
+					<div class="location-desc">
+						合肥市蜀山区锦绣大道99号
+					</div>
+				</div>
+				<div class="open-time">
+					营业时间 09:30~22:30
+				</div>
+			</div>
+			<div class="btn">
+				<input type="button" id="btn1"/>
+				<label class="icon-aixin1" for="btn1">
+					<img src="img/aixin1.png" alt="">
+				</label>
+				<label class="icon-aixin2" for="btn1" style="display: none">
+					<img src="img/aixin2.png" alt="">
+				</label>
+			</div>
+		</div>
+		<div class="nav" id="navBar">
+			<div class="nav-tab cur-tab">
+				<p class="tab-txt">
+					手艺人
+				</p>
+			</div>
+			<div class="nav-tab">
+				<p class="tab-txt">
+					服务评价
+				</p>
+			</div>
+			<div class="nav-tab">
+				<p class="tab-txt">
+					门店信息
+				</p>
+			</div>
+		</div>
+		<div class="content">
+			<div class="hair-stylist content_1" id="shouyiren">
+				<div class="stylist">
+					<div class="stylist-info">
+						<div class="stylist-photo">
+							<a href="index_stylist.html">
+								<img src="img/stylist.jpg"/>
+							</a>
+						</div>
+						<div class="about-he">
+							<div class="price-wrapper">
+								<div class="his-name">
+									Andy
+								</div>
+								<div class="price">
+									<span id="cur-price">￥<i>38</i>.0</span>
+									<s id="old-price">￥88</s>
+								</div>
+							</div>
+							<div class="waitting-time">
+								<div class="desc">
+									前面有1人，约等待20分钟
+								</div>
+								<div class="his-state">
+									<!--<button>一 键 取 号</button>-->
+									<a href="index_service.html">
+										<div class="get-num-02">一 键 取 号</div>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="stylist stylist-02">
+					<div class="stylist-info">
+						<div class="stylist-photo">
+							<a href="index_stylist.html">
+								<img src="img/stylist.jpg"/>
+							</a>
+						</div>
+						<div class="about-he">
+							<div class="price-wrapper">
+								<div class="his-name">
+									Andy
+								</div>
+								<div class="price">
+									<span id="cur-price">￥<i>38</i>.0</span>
+									<s id="old-price">￥88</s>
+								</div>
+							</div>
+							<div class="waitting-time">
+								<div class="desc">
+									7月29号上午9:30复工
+								</div>
+								<div class="his-state at-rest">
+									<!--<button>休息中</button>-->
+									<div class="get-num-02">休息中</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="ser-pingjia-01 content_2" id="pj">
+				<div class="title">
+					服务评价
+				</div>
+				<div class="pj-info">
+					<div class="pj-item">
+						<div class="num">
+							4.99
+						</div>
+						<div class="title">
+							评分
+						</div>
+					</div>
+					<div class="pj-item">
+						<div class="num">
+							5000
+						</div>
+						<div class="title">
+							评论
+						</div>
+					</div>
+				</div>
+				<div class="customer-pj">
+					<div class="hot-pj">
+						<div class="user-avatar-box">
+							<div class="user-avatar">
+								<img src="img/avatar-03.jpg"/>
+							</div>
+						</div>
+						<div class="pingfen-content">
+							<div class="pingfen-zuanshi">
+								<div class="user-ID">
+									大嘴巴<i>(137****5767）</i>
+								</div>
+								<div class="zuanshi">
+									<img src="img/zuanshi.png"/>
+									<img src="img/zuanshi.png"/>
+									<img src="img/zuanshi.png"/>
+									<img src="img/zuanshi.png"/>
+									<img src="img/zuanshi.png"/>
+								</div>
+							</div>
+							<div class="pingfen-title">
+								服务很好，店铺很干净
+							</div>
+							<div class="pingfen-subtitle">
+								<div class="icon-biaoqian">
+									<img src="img/biaoqian.png"/>
+								</div>
+								服务周到，技术过硬，简洁方便
+							</div>
+							<div class="stylist-name">
+								<div class="name">
+									发型师：Andy
+								</div>
+								<div class="time">
+									2018-07-26
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="all-pj">
+						<a href="index_all_pj.html">
+							查看全部评价
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="mendian-info content_3" id="md">
+				<div class="md-title">
+					门店信息
+				</div>
+				<div class="md-info-item-01">
+					<div class="md-subtitle">
+						历史客流分布
+					</div>
+					<div class="img-tips">
+						<div class="tips-item">
+							<i></i><span>周末</span>
+						</div>
+						<div class="tips-item tips-item-02">
+							<i class="work-day"></i><span>工作日</span>
+						</div>
+					</div>
+					<div class="img-box">
+						<img src="img/img.png"/>
+					</div>
+					<div class="remind">
+						提醒：参考图示了解门店排队高峰时段，可提前规划您的剪发时间哦！
+					</div>
+				</div>
+				<div class="md-info-item-02">
+					<div class="md-subtitle">
+						服务标准
+					</div>
+					<div class="standard">
+						<div class="standard-item">
+							<div class="item-icon">
+								<img src="img/mdxqicon1.png"/>
+							</div>
+							<div class="item-title">
+								专注剪发服务
+							</div>
+						</div>
+						<div class="standard-item">
+							<div class="item-icon">
+								<img src="img/mdxqicon2.png"/>
+							</div>
+							<div class="item-title">
+								进口吸碎发系统
+							</div>
+						</div>
+						<div class="standard-item">
+							<div class="item-icon">
+								<img src="img/mdxqicon3.png"/>
+							</div>
+							<div class="item-title">
+								头皮清洁喷雾
+							</div>
+						</div>
+						<div class="standard-item">
+							<div class="item-icon">
+								<img src="img/mdxqicon4.png"/>
+							</div>
+							<div class="item-title">
+								无推销办卡
+							</div>
+						</div>
+						<div class="standard-item">
+							<div class="item-icon">
+								<img src="img/mdxqicon5.png"/>
+							</div>
+							<div class="item-title">
+								工具严格消毒
+							</div>
+						</div>
+						<div class="standard-item">
+							<div class="item-icon">
+								<img src="img/mdxqicon6.png"/>
+							</div>
+							<div class="item-title">
+								三年以上经验发型师
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="kf-weixin">
+					<div class="title">
+						客服（工作日 10:00~18：00）
+					</div>
+					<div class="kf-qrcode">
+						<img src="img/img2.png"/>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--确认取号弹窗-->
+		<div class="popup-wrap">
+			<div class="qh-popup">
+				<div class="popup-title">
+					确认取号？
+				</div>
+				<div class="popup-content">
+					<div class="price">
+						￥<i>38</i>.0
+					</div>
+					<div class="desc">
+						当前发型师价格
+					</div>
+					<div class="tips">
+						过号需要重新取号，请安排好时间及时到店
+					</div>
+				</div>
+				<div class="confirm">
+					<a href="index_service.html">
+						<button class="no">
+							取消
+						</button>
+					</a>
+					<a href="index_getnum_success.html">
+						<button class="yes">
+							确认
+						</button>
+					</a>
+				</div>
+			</div>
+		</div>
+		<script src="js/jquery-1.12.4.min.js"></script>
+		<script>
+            var cTop_1 = $(".content_1").offset().top - 86;
+            var cTop_2 = $(".content_2").offset().top - 86;
+            var cTop_3 = $(".content_3").offset().top - 86;
+            // console.log(cTop_1);
+            $(window).scroll(function () {
+                var toT = $(this).scrollTop();
+                // console.log(toT)
+                if (toT > 160) {
+                    $(".nav").addClass("active");
+                    $(".content").addClass("active_1");
+                } else if (toT <= 160) {
+                    $(".nav").removeClass("active");
+                    $(".content").removeClass("active_1");
+                }
+                if (toT >= cTop_1 && toT < cTop_2) {
+                    $(".nav-tab").removeClass("cur-tab");
+                    $(".nav-tab:nth-of-type(1)").addClass("cur-tab");
+                } else if (toT >= cTop_2  && toT < cTop_3) {
+                    $(".nav-tab").removeClass("cur-tab");
+                    $(".nav-tab:nth-of-type(2)").addClass("cur-tab");
+                } else if (toT >= cTop_3 ) {
+                    $(".nav-tab").removeClass("cur-tab");
+                    $(".nav-tab:nth-of-type(3)").addClass("cur-tab");
+                }
+            })
+            //点击跳转
+            $(".nav-tab").each(function () {
+                $(this).on("click", function () {
+                    var index = $(this).index();
+                    $(".nav-tab").removeClass("cur-tab");
+                    $(this).addClass("cur-tab");
+                    switch (index) {
+                        case 0:
+                            $('html,body').animate({
+                                scrollTop: cTop_1 + "px"
+                            }, 0);
+                            break;
+                        case 1:
+                            $('html,body').animate({
+                                scrollTop: cTop_2 + "px"
+                            }, 0);
+                            break;
+                        case 2:
+                            $('html,body').animate({
+                                scrollTop: cTop_3 + "px"
+                            }, 0);
+                            break;
+                    }
+                })
+            })
+		</script>
+	</body>
+</html>

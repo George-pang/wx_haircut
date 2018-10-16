@@ -1,0 +1,111 @@
+/*门店详情及发型师详情页 滑动切换nav-tab样式*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    /*height: 800vh;*/
+    padding-top: 44px;
+}
+
+.page-hd {
+    height: 44px;
+    line-height: 44px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    color: #fff;
+    background-color: #000;
+}
+
+.shop-photo {
+    height: 160px;
+    text-align: center;
+}
+
+.nav{
+    display: flex;
+    background-color: #FFFFFF;
+    align-items: center;
+    position: relative;
+    white-space: nowrap;
+}
+.nav::after{
+    content: "";
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: #ebebeb;
+}
+
+.active {
+    position: fixed;
+    top: 44px;
+    left: 0;
+    right: 0;
+    z-index: 99;
+}
+
+.nav .nav-tab{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 42px;
+    /*color: #666666;*/
+}
+.nav .nav-tab .tab-txt{
+    display: flex;
+    height: 100%;
+    align-items: center;
+    color: #666666;
+}
+
+.nav .cur-tab .tab-txt{
+    position: relative;
+    color: #dec27c;
+    font-size: 12px;
+    line-height: 12px;
+    letter-spacing: 0px;
+}
+.nav .cur-tab .tab-txt::after{
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #dec27c;
+}
+
+.active_1 {
+    padding-top: 42px;
+}
+
+
+/*.content_1 {*/
+    /*display: block;*/
+    /*margin-top: 100px;*/
+    /*height: 800px;*/
+    /*background-color: royalblue;*/
+/*}*/
+
+/*.content_2 {*/
+    /*display: block;*/
+    /*margin-top: 100px;*/
+    /*height: 400px;*/
+    /*background-color: lightcoral;*/
+/*}*/
+
+/*.content_3 {*/
+    /*display: block;*/
+    /*margin-top: 100px;*/
+    /*height: 400px;*/
+    /*background-color: forestgreen;*/
+/*}*/
+
